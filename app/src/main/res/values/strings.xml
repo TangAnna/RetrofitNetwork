@@ -2,4 +2,16 @@
     <string name="app_name">AndroidFrame</string>
     <!--loading-->
     <string name="dialog_loading">加载中...</string>
+
+    <!--空页面-->
+    <string name="baseui_emptyDefaultText">空空如也~</string>
+
+    <!--错误页面-->
+    <string name="baseui_errorRefresh">点击刷新</string>
+    <string name="baseui_errorText">加载失败</string>
+
+    <!--MainActivity页面-->
+    <string name="string_home_tab">首页</string>
+    <string name="string_entertainment_tab">活动</string>
+    <string name="string_mine_tab">我的</string>
 </resources>

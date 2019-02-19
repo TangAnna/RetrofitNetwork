@@ -25,6 +25,10 @@ android {
             res.srcDirs = [
                     'src/main/res/layouts/dialog',
                     'src/main/res/layouts/main',
+                    'src/main/res/layouts/baseui',
+                    'src/main/res/layouts/login',
+                    'src/main/res/layouts/home',
+                    'src/main/res/layouts/mine',
                     'src/main/res'
             ]
         }
@@ -66,8 +70,17 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.0.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
-
     //Rxjava
     implementation 'io.reactivex:rxjava:1.1.6'
     implementation 'io.reactivex:rxandroid:1.2.1'
+    //页面 框架
+    implementation 'com.kymjs.frame:framework:1.0.4'
+    //刷新加载
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-7'
+    //recyclerview
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //adapter
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+    //design包
+    implementation 'com.android.support:design:28.0.0'
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg">
+    <!--错误页面-->
+    <ImageView
+        android:id="@+id/iv_error_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y114"
+        android:src="@drawable/default_error_icon" />
+
+    <TextView
+        android:id="@+id/tv_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_error_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y50"
+        android:text="@string/baseui_errorText"
+        android:textColor="@color/color666"
+        android:textSize="@dimen/x32" />
+
+    <TextView
+        android:id="@+id/tv_error_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_error_text"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingTop="@dimen/y50"
+        android:paddingRight="@dimen/default_margin"
+        android:paddingBottom="@dimen/y50"
+        android:text="@string/baseui_errorRefresh"
+        android:textColor="@color/color666"
+        android:textSize="@dimen/x32" />
+</RelativeLayout>

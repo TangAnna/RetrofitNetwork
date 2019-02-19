@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.example.tang.androidframe.baseui.widget.CustomViewPager
+        android:id="@+id/vp_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
 
-</android.support.constraint.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorDividingLine" />
+
+
+    <com.example.tang.androidframe.baseui.widget.BottomBarLayout
+        android:id="@+id/bl_main_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.example.tang.androidframe.baseui.widget.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="@dimen/x36"
+            app:iconNormal="@drawable/home_tab_normal"
+            app:iconSelected="@drawable/home_tab_select"
+            app:iconWidth="@dimen/x38"
+            app:itemText="@string/string_home_tab"
+            app:itemTextSize="@dimen/x20"
+            app:textColorNormal="@color/colorTabNormal"
+            app:textColorSelected="@color/colorTabSelected" />
+
+        <com.example.tang.androidframe.baseui.widget.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="@dimen/x36"
+            app:iconNormal="@drawable/home_tab_normal"
+            app:iconSelected="@drawable/home_tab_select"
+            app:iconWidth="@dimen/x38"
+            app:itemText="@string/string_home_tab"
+            app:itemTextSize="@dimen/x20"
+            app:textColorNormal="@color/colorTabNormal"
+            app:textColorSelected="@color/colorTabSelected" />
+
+        <com.example.tang.androidframe.baseui.widget.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="@dimen/x38"
+            app:iconNormal="@drawable/mine_tab_normal"
+            app:iconSelected="@drawable/mine_tab_select"
+            app:iconWidth="@dimen/x44"
+            app:itemText="@string/string_mine_tab"
+            app:itemTextSize="@dimen/x20"
+            app:textColorNormal="@color/colorTabNormal"
+            app:textColorSelected="@color/colorTabSelected"
+            app:unreadThreshold="99" />
+
+    </com.example.tang.androidframe.baseui.widget.BottomBarLayout>
+</LinearLayout>

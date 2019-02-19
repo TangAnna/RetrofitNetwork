@@ -1,11 +1,23 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
+        <item name="android:textSize">@dimen/x26</item>
+        <item name="android:textColor">@color/color333</item>
+        <item name="android:windowBackground">@color/colorBg</item>
+        <item name="android:textColorHint">@color/color999</item>
+    </style>
+
+    <!-- Activity进入退出动画 -->
+    <style name="ActivityAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_out</item>
     </style>
 
     <!--BaseDialog的样式-->
@@ -36,6 +48,36 @@
     <style name="DialogAnimationCenter">
         <item name="android:windowEnterAnimation">@anim/anim_from_center_in</item>
         <item name="android:windowExitAnimation">@anim/anim_from_center_out</item>
+    </style>
+
+    <!--侧滑的样式-->
+    <style name="BaseSwipeBackLayout">
+        <item name="base_edge_size">50dip</item>
+        <item name="base_shadow_left">@drawable/base_shadow_left</item>
+        <item name="base_shadow_right">@drawable/base_shadow_right</item>
+        <item name="base_shadow_bottom">@drawable/base_shadow_bottom</item>
+    </style>
+
+    <!--ToolBar的样式（默认白色背景）-->
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:paddingTop">@dimen/y40</item>-->
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:theme">@style/PopWindowStyle</item>
+    </style>
+
+    <!--主题颜色的toolbar的样式-->
+    <style name="ColorToolBarStyle" parent="ToolBarStyle">
+        <item name="android:background">@drawable/toolbar_color_bg</item>
+        <item name="android:colorBackground">@color/transparent</item>
+    </style>
+
+    <!--PopWindow的样式-->
+    <style name="PopWindowStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/color80</item>
     </style>
 
 </resources>

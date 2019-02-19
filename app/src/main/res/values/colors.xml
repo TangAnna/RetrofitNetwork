@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#13fd03</color>
+    <color name="colorPrimaryDark">#ff7700</color>
     <color name="colorAccent">#D81B60</color>
 
     <!--透明值-->
@@ -11,6 +11,27 @@
 
     <!--loading背景颜色-->
     <color name="dialogLoadingBg">#66000000</color>
+    <!--页面title的色值-->
+    <color name="titleColor">#1A1A1A</color>
+    <!--title中分割线的色值-->
+    <color name="colorTitleLine">#DDDDDD</color>
 
+    <!--页面背景颜色-->
+    <color name="colorBg">#F8F8F8</color>
+    <!--分割线的颜色-->
+    <color name="colorDividingLine">#DDDDDD</color>
+
+    <!--首页三个tab文字色值-->
+    <color name="colorTabNormal">#999999</color>
+    <color name="colorTabSelected">#FFB547</color>
+
+
+    <color name="red">#ff0000</color>
+
+    <color name="color666">#666666</color>
+    <color name="color333">#333333</color>
+    <color name="color999">#999999</color>
+    <color name="color80">#808080</color>
+    <color name="colorf46">#F46119</color>
 
 </resources>
